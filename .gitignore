@@ -1,0 +1,5 @@
+/manager/
+/voevodin/
+/connectors/
+!/core/config/config.inc.php
+/assets/img/

@@ -1,0 +1,65 @@
+.masonry-column-carrier {
+    clear: both;
+}
+
+#masonry-column-carrier {
+    overflow: hidden;
+}
+
+.masonry-column-carrier .masonry-column-item {
+    display: block;
+    float: left;
+    margin: 36px;
+    padding: 24px;
+    background: #fff;
+    font-size: 13px;
+    line-height: 1.25em;
+}
+
+.masonry-column-carrier .masonry-column-item p {
+    margin: 0 0 1em 0;
+}
+
+.masonry-column-carrier .masonry-column-1 {
+    width: 280px;
+}
+
+.masonry-column-carrier .masonry-column-2 {
+    width: 480px;
+}
+
+.masonry-column-carrier .masonry-column-3 {
+    width: 680px;
+}
+
+.masonry-column-carrier .masonry-column-item a {
+
+}
+
+.masonry-column-carrier .masonry-column-item img {
+    width: 100%;
+}
+
+/*---*/
+
+.masonry-column-carrier
+, .masonry-column-carrier .masonry-column-item {
+    -webkit-transition-duration: 0.7s;
+    -moz-transition-duration: 0.7s;
+    -o-transition-duration: 0.7s;
+    transition-duration: 0.7s;
+}
+
+.masonry-column-carrier {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    -o-transition-property: height, width;
+    transition-property: height, width;
+}
+
+.masonry-column-carrier .masonry-column-item {
+    -webkit-transition-property: left, right, top;
+    -moz-transition-property: left, right, top;
+    -o-transition-property: left, right, top;
+    transition-property: left, right, top;
+}

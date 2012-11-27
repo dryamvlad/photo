@@ -1,0 +1,121 @@
+
+@media handheld, screen and (max-width: 1200px) {
+
+.static-column-carrier .main-content-carrier {
+    clear: both;
+    margin-left: 0;
+    margin-top: 46px;
+}
+
+/*---*/
+}
+
+/* --- --- --- */
+
+@media handheld, screen and (max-width: 800px) {
+
+.header-carrier
+{
+    position: absolute;
+}
+
+.header-carrier .logo-block
+, .header-carrier .phone-block
+{
+    float: none;
+    margin-left: 42px;
+}
+
+.header-nav-carrier
+{
+    width: auto;
+    margin: 0;
+    padding: 0 0 26px;
+}
+
+.header-nav-carrier .nav-item
+{
+    float: none;
+}
+
+.header-nav-carrier .nav-item a
+{
+    padding-left: 42px;
+    text-align: left;
+    margin-top: 0;
+}
+
+}
+
+@media handheld, screen and (max-width: 360px) {
+
+.header-carrier
+{
+    position: static !important;
+}
+
+.wrapper {
+    min-width: 310px;
+    width: 310px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.hidden-header-block .header-albums-carrier
+, .header-price-carrier
+{
+    padding: 20px 0;
+}
+
+.masonry-column-carrier {
+    height: auto !important;
+}
+
+.static-column-carrier {
+    margin: 20px 0;
+}
+
+.hidden-header-block .header-albums-carrier .album-item {
+    float: none;
+    margin: 20px auto;
+}
+
+.hidden-header-carrier .tab-item-block .scroll-block {
+    overflow: inherit;
+    width: auto;
+}
+
+.masonry-column-carrier .masonry-column-item
+, .static-column-carrier .main-content-carrier
+, .static-column-carrier .main-photo-carrier
+{
+
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    float: none;
+    padding: 5px;
+    margin: 20px auto;
+    box-shadow: none;
+    width: 260px;
+}
+
+.header-price-carrier .price-item-block {
+    margin: 20px auto;
+    float: none;
+    width: 260px;
+}
+
+.header-price-carrier .price-item-block {
+    margin: 20px auto;
+    float: none;
+    width: 260px;
+}
+
+
+#scroll-top {
+    display: none !important;
+}
+
+}
+

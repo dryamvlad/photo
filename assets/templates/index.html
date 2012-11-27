@@ -1,0 +1,171 @@
+
+<!DOCTYPE HTML>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <title>[[*pagetitle]]</title>
+    <meta name="viewport" content=" width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/voevodin/assets/css/style.css">
+    <link rel="stylesheet" href="/voevodin/assets/css/media-queries.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" href="css/ie-style.css">
+    <![endif]-->
+    <!-- END CSS -->
+    <!-- JAVASCRIPT -->
+    <script src="/voevodin/assets/js/jquery.js"></script>
+    <script src="/voevodin/assets/js/other/jq.detect-browser.js"></script>
+    <script src="/voevodin/assets/js/function.js"></script>
+    <!--MASONY-->
+    <script src="/voevodin/assets/js/other/jQueryMasonry/modernizr-transitions.js"></script>
+    <script src="/voevodin/assets/js/other/jQueryMasonry/box-maker.js"></script>
+    <script src="/voevodin/assets/js/other/jQueryMasonry/jquery.infinitescroll.min.js"></script>
+    <script src="/voevodin/assets/js/other/jQueryMasonry/jquery.masonry.min.js"></script>
+    <!--MASONY-->
+    <!--FANCYBOX-->
+    <!-- Add jQuery library -->
+    <link rel="stylesheet" href="/voevodin/assets/js/other/Fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="/voevodin/assets/js/other/Fancybox/helpers/jquery.fancybox-buttons.css">
+    <link rel="stylesheet" href="/voevodin/assets/js/other/Fancybox/helpers/jquery.fancybox-thumbs.css">
+    <script src="/voevodin/assets/js/other/jq.mousewheel.js"></script>
+    <script src="/voevodin/assets/js/other/Fancybox/jquery.fancybox.js"></script>
+    <script src="/voevodin/assets/js/other/Fancybox/helpers/jquery.fancybox-buttons.js"></script>
+    <script src="/voevodin/assets/js/other/Fancybox/helpers/jquery.fancybox-thumbs.js"></script>
+    <script src="/voevodin/assets/js/other/Fancybox/helpers/jquery.fancybox-media.js"></script>
+    <!--FANCYBOX-->
+    <!--SOCIAL-->
+    <script type="text/javascript" src="//vk.com/js/api/openapi.js?64"></script>
+    <script type="text/javascript">VK.init({apiId: 3171625, onlyWidgets: true});</script>
+    <!--SOCIAL-->
+    <!-- END JAVASCRIPT -->
+</head>
+
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- WRAPPER -->
+<div class="wrapper">
+    <div class="body-carrier">
+
+        <div class="header-carrier">
+            <!--<a id="scroll-link" class="scroll-link">Вверх</a>-->
+            <div class="header-block">
+                <div class="logo-block">
+                    <img src="[[*logo]]" alt="">
+                </div>
+
+                <div class="phone-block">
+                    <span class="tel phone">[[*phone]]</span>
+                </div>
+
+                <div class="header-nav-carrier">
+                    <div class="nav-item">
+                        <a id="header-link-1" href="#">услуги и цены</a>
+                    </div>
+                    <div class="nav-item">
+                        <a id="header-link-2" href="#">Альбомы</a>
+                    </div>
+                    <div class="cl"></div>
+                </div>
+            </div>
+
+            <div class="hidden-header-carrier">
+                <div class="hidden-header-block">
+                    <div id="header-tab-2" class="tab-item-block">
+                        <div class="header-albums-carrier">
+                            <div class="scroll-block">
+                                <div class="item-container">
+                                    [[!GalleryAlbums? &rowTpl=`galListAlbumRowTpl`]]
+                                    <div class="cl"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="header-tab-1" class="tab-item-block">
+                        <div class="header-price-carrier">
+                            <div class="price-item-block">
+                                <div class="item-header">[[*servicesHeader]]</div>
+                                <div class="item-content">
+                                    <p>[[*servicesIntroText]]</p>
+                                </div>
+                            </div>
+                            <div class="scroll-block">
+                                <div class="item-container">
+                                    [[!getImageList?
+                                    &tvname=`services`
+                                    &tpl=`@CODE:<div class="price-item-block item">
+                                    <div class="item-header">[[+title]]</div>
+                                    <div class="item-content">
+                                        [[+text]]
+                                    </div>
+                                </div>
+                                    `]]
+                                    <div class="cl"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="hidden-header-close-block" class="close-block"><a href="#"></a></div>
+            </div>
+        </div>
+
+        <div class="content-carrier">
+
+            <div class="static-column-carrier masonry-column-carrier">
+                <div class="main-photo-carrier block-shadow">
+                    <img src="[[*mainPhoto]]" alt="">
+                </div>
+                <div class="main-content-carrier block-shadow">
+                    <div class="border-block">
+                        <div class="user-content">
+                            [[*introText]]
+                        </div>
+                        <div class="content-like-carrier">
+                            <div class="like-item">
+                                <div class="fb-like" data-href="http://nebo-design.ru/" data-send="false" data-layout="button_count" data-width="150" data-show-faces="true"></div>
+                            </div>
+                            <div class="like-item">
+                                <div id="vk_like"></div>
+                                <script type="text/javascript">VK.Widgets.Like("vk_like", {type: "button"});</script>
+                            </div>
+                            <div class="like-item">
+                                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://nebo-studio.ru/" data-via="nebostudio" data-lang="ru">Твитнуть</a>
+                                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                            </div>
+                            <div class="cl"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cl"></div>
+            </div>
+
+            <div id="masonry-column-carrier" class="masonry-column-carrier transitions-enabled clearfix">
+                [[!GalleryAlbums]]
+                <div id="scroll-top" class="scroll-top"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- /WRAPPER -->
+
+<!-- FOOTER -->
+<div class="footer-carrier">
+
+</div>
+<!-- /FOOTER -->
+
+</body>
+
+</html>

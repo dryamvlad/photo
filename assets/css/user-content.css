@@ -1,0 +1,78 @@
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1.2em;
+    margin-top: 1.2em;
+    font-family: Arial, Sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2em;
+    text-transform: none;
+}
+
+.user_content {
+    font-family: "Trebuchet MS", Sans-serif;
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+.user_content ul {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.user_content li {
+    margin-left: 2em;
+    line-height: 1.79em;
+    list-style-type: disc;
+}
+
+.user_content h1 {
+    font-size: 28px;
+}
+
+.user_content h2 {
+    font-size: 26px;
+}
+
+.user_content h3 {
+    font-size: 24px;
+}
+
+.user_content h4 {
+    font-size: 22px;
+}
+
+.user_content h5 {
+    font-size: 20px;
+}
+
+.user_content h6 {
+    font-size: 18px;
+}
+
+.user_content table {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.user_content table tr {
+    background: #f8f8f8;
+}
+
+.user_content table tr.odd {
+    background: #ffffff;
+}
+
+.user_content td, .user_content th {
+    border: 1px solid #d8d8d8;
+    padding: 1em 1.5em;
+
+}
+
+.user_content th {
+    font-family: Verdana, Sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+}
